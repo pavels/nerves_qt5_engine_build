@@ -1,0 +1,11 @@
+--- a/qtwebengine/src/3rdparty/chromium/base/trace_event/trace_event_memory_overhead.h
++++ b/qtwebengine/src/3rdparty/chromium/base/trace_event/trace_event_memory_overhead.h
+@@ -8,6 +8,8 @@
+ #include <stddef.h>
+ #include <stdint.h>
+ 
++#include <string>
++
+ #include <unordered_map>
+ 
+ #include "base/base_export.h"

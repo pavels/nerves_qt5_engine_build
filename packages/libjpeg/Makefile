@@ -1,0 +1,10 @@
+PACKAGE_NAME=libjpeg
+PACKAGE_VERSION=2.0.5
+
+PACKAGE_URL=https://downloads.sourceforge.net/project/libjpeg-turbo/$(PACKAGE_VERSION)/libjpeg-turbo-$(PACKAGE_VERSION).tar.gz
+PACKAGE_FILE=libjpeg-turbo-$(PACKAGE_VERSION).tar.gz
+PACKAGE_ARCHIVE_DIR=libjpeg-turbo-$(PACKAGE_VERSION)
+
+CMAKE_PARAMS=-DCMAKE_C_COMPILER=$(GNU_HOST_NAME)-gcc -DCMAKE_FIND_ROOT_PATH=$(BUILDROOT)  -DCMAKE_INSTALL_PREFIX=$(ENGINE_PATH)
+
+include $(BASEDIR)/package.mk

@@ -1,0 +1,1 @@
+ KERNELS=="input*", MODE="0666"
